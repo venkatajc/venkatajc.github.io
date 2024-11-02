@@ -17,27 +17,27 @@
         body, html {
             height: 100%;
             overflow-x: hidden;
-            scroll-behavior: smooth; /* Smooth scrolling */
-            font-family: 'Poppins', sans-serif; /* Updated font */
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
         }
 
         /* Navigation bar styling */
         nav {
-            width: 80%; /* Match slide width */
+            width: 80%;
             padding: 10px 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Subtle background */
-            margin: 0 auto; /* Center align with margin */
-            text-align: right; /* Align items to the right */
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 auto;
+            text-align: right;
             z-index: 1000;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            gap: 15px; /* Space between menu items */
+            justify-content: flex-end;
+            gap: 15px;
         }
 
         nav a {
-            color: #333; /* Darker font color */
+            color: #333;
             text-decoration: none;
             font-weight: 600;
             font-size: 1em;
@@ -49,47 +49,31 @@
 
         /* Section styling */
         .section {
-            height: 100vh; /* Set each section to full viewport height */
-            width: 80%; /* Match width of nav */
-            margin: 0 auto; /* Remove extra margin */
+            height: 100vh;
+            width: 80%;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-size: cover; /* Ensure background covers section */
-            background-repeat: no-repeat;
-            background-position: center;
-            border: 2px solid #CC3300; /* Matching red border with reduced thickness */
+            border: 0.5px solid #CC3300;
             border-radius: 10px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            overflow: hidden; /* Remove any extra space around content */
+            overflow: hidden;
         }
 
-        /* Background images for each section */
-        #Home {
-            background-image: url('img/Slide1.PNG');
-        }
-        #About {
-            background-image: url('img/Slide2.JPG');
-        }
-        #Skills {
-            background-image: url('img/Slide3.JPG');
-        }
-        #Services {
-            background-image: url('img/Slide4.JPG');
-        }
-        #Portfolio {
-            background-image: url('img/Slide5.JPG');
-        }
-        #Connect {
-            background-image: url('img/Slide7.JPG');
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
         /* Separator styling */
         .separator {
-            height: 1px; /* Thin line */
-            background-color: #CC3300; /* Matching red color */
-            width: 80%; /* Match section width */
-            margin: 5px auto; /* Reduced margin for a thinner separator */
+            height: 1px;
+            background-color: #CC3300;
+            width: 80%;
+            margin: 5px auto;
             border-radius: 1px;
         }
 
@@ -120,25 +104,35 @@
         <a href="#connect">Connect</a>
     </nav>
 
-    <!-- Slide Sections -->
-    <section id="home" class="section"></section>
+    <!-- Slide Sections with Images -->
+    <section id="home" class="section">
+        <img src="img/Slide1.JPG" alt="Home Section Image">
+    </section>
     <div class="separator"></div>
 
-    <section id="about" class="section"></section>
+    <section id="about" class="section">
+        <img src="img/Slide2.jpg" alt="About Section Image">
+    </section>
     <div class="separator"></div>
 
-    <section id="expertise" class="section"></section>
+    <section id="expertise" class="section">
+        <img src="img/Slide3.jpg" alt="Expertise Section Image">
+    </section>
     <div class="separator"></div>
 
-    <section id="services" class="section"></section>
+    <section id="services" class="section">
+        <img src="img/Slide4.jpg" alt="Services Section Image">
+    </section>
     <div class="separator"></div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio1" class="section"></section>
+    <section id="portfolio1" class="section">
+        <img src="img/Slide5.jpg" alt="Portfolio Section Image">
+    </section>
     <div class="separator"></div>
 
-    <!-- Connect Section -->
-    <section id="connect" class="section"></section>
+    <section id="connect" class="section">
+        <img src="img/Slide7.jpg" alt="Connect Section Image">
+    </section>
 
     <script>
         // JavaScript to hide the navigation bar after scrolling down from the home section
